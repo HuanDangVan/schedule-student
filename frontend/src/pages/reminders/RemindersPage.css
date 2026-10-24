@@ -1,0 +1,116 @@
+/* RemindersPage.css */
+.rem-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rem-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+.rem-desc {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.rem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.rem-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, border-color 0.2s;
+}
+.rem-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+.rem-card.sent {
+  opacity: 0.7;
+}
+
+.rem-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rem-bell-badge {
+  font-size: 22px;
+}
+
+.rem-toggle-btn {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.rem-toggle-btn.active {
+  background: var(--color-success-light);
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.rem-content {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.rem-meta-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12.5px;
+  margin-top: auto;
+}
+.rem-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.rem-meta-row span {
+  color: var(--color-text-muted);
+}
+.rem-meta-row strong {
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.empty-rem {
+  text-align: center;
+  padding: 60px;
+  background: var(--color-card);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text);
+}
