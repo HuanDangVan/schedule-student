@@ -31,9 +31,9 @@ def get_progress_overview(
     tasks = db.query(CongViec).filter(CongViec.MaNguoiDung == current_user.MaNguoiDung).all()
     total = len(tasks)
 
-    completed = sum(1 for t in tasks if t.TrangThai == "Đã hoàn thành")
-    in_progress = sum(1 for t in tasks if t.TrangThai == "Đang làm")
-    not_started = sum(1 for t in tasks if t.TrangThai == "Chưa làm")
+    completed = sum(1 for t in tasks if (t.TienDo or 0) >= 100)
+    in_progress = sum(1 for t in tasks if 0 < (t.TienDo or 0) < 100)
+    not_started = sum(1 for t in tasks if (t.TienDo or 0) <= 0)
 
     now = datetime.datetime.now()
     overdue = sum(
@@ -71,7 +71,7 @@ def get_progress_by_category(
             CongViec.MaNguoiDung == current_user.MaNguoiDung
         ).all()
         total = len(tasks)
-        completed = sum(1 for t in tasks if t.TrangThai == "Đã hoàn thành")
+        completed = sum(1 for t in tasks if (t.TienDo or 0) >= 100)
         avg_progress = round(sum(t.TienDo for t in tasks) / total, 1) if total > 0 else 0
         rate = round((completed / total) * 100, 1) if total > 0 else 0
 

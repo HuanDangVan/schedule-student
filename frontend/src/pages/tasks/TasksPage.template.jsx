@@ -203,11 +203,10 @@ export default function TasksPageTemplate({
 
                   {/* Priority selector */}
                   <select
-                    className={`badge-priority-select ${
-                      task.MucDoUuTien === "Khẩn cấp" ? "khan-cap" :
+                    className={`badge-priority-select ${task.MucDoUuTien === "Khẩn cấp" ? "khan-cap" :
                       task.MucDoUuTien === "Cao" ? "cao" :
-                      task.MucDoUuTien === "Trung bình" ? "trung-binh" : "thap"
-                    }`}
+                        task.MucDoUuTien === "Trung bình" ? "trung-binh" : "thap"
+                      }`}
                     value={task.MucDoUuTien}
                     onChange={(e) => onSetPriority(task.MaCongViec, e.target.value)}
                     title="Đổi mức ưu tiên"
@@ -233,12 +232,12 @@ export default function TasksPageTemplate({
                     <strong style={{ color: task.IsOverdue ? "var(--color-danger)" : "var(--color-text)" }}>
                       {task.HanHoanThanh
                         ? new Date(task.HanHoanThanh).toLocaleDateString("vi-VN", {
-                            hour: "2-digit",
-                            minute: "2-digit",
-                            day: "numeric",
-                            month: "numeric",
-                            year: "numeric"
-                          })
+                          hour: "2-digit",
+                          minute: "2-digit",
+                          day: "numeric",
+                          month: "numeric",
+                          year: "numeric"
+                        })
                         : "Không có hạn chót"}
                     </strong>
                     {task.IsOverdue && <span className="overdue-tag">Quá hạn!</span>}
@@ -373,6 +372,32 @@ export default function TasksPageTemplate({
                       <option value="Cao">Cao</option>
                       <option value="Trung bình">Trung bình</option>
                       <option value="Thấp">Thấp</option>
+
+                    </select>
+                  </div>
+
+
+                  <div className="form-group">
+                    <label className="form-label">Trạng thái</label>
+                    <select
+                      className="form-select"
+                      value={formData.TrangThai}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          TrangThai: e.target.value,
+                          TienDo:
+                            e.target.value === "Đã hoàn thành"
+                              ? 100
+                              : e.target.value === "Chưa làm"
+                                ? 0
+                                : formData.TienDo
+                        })
+                      }
+                    >
+                      <option value="Chưa làm">Chưa làm</option>
+                      <option value="Đang làm">Đang làm</option>
+                      <option value="Đã hoàn thành">Đã hoàn thành</option>
                     </select>
                   </div>
                 </div>
