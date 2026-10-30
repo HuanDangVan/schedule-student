@@ -90,8 +90,8 @@ export default function TasksPageTemplate({
       MaDanhMuc: parseInt(formData.MaDanhMuc),
       TienDo: parseInt(formData.TienDo) || 0,
       ThoiGianDuKien: parseInt(formData.ThoiGianDuKien) || null,
-      NgayBatDau: formData.NgayBatDau ? new Date(formData.NgayBatDau).toISOString() : null,
-      HanHoanThanh: formData.HanHoanThanh ? new Date(formData.HanHoanThanh).toISOString() : null
+      NgayBatDau: formData.NgayBatDau || null,
+      HanHoanThanh: formData.HanHoanThanh || null
     };
 
     if (editingTask) {
