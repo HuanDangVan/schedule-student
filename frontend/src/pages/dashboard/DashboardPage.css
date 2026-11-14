@@ -15,6 +15,7 @@
   justify-content: space-between;
   backdrop-filter: blur(8px);
 }
+
 .banner-badge {
   display: inline-block;
   padding: 4px 12px;
@@ -27,16 +28,19 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
 .banner-title {
   font-size: 24px;
   font-weight: 800;
   color: var(--color-text);
   margin-bottom: 8px;
 }
+
 .banner-subtitle {
   font-size: 14px;
   color: var(--color-text-secondary);
 }
+
 .banner-actions {
   display: flex;
   gap: 12px;
@@ -48,6 +52,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
+
 .stat-card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -59,10 +64,12 @@
   box-shadow: var(--shadow-sm);
   transition: transform 0.2s, border-color 0.2s;
 }
+
 .stat-card:hover {
   transform: translateY(-2px);
   border-color: var(--color-border-light);
 }
+
 .stat-icon {
   width: 50px;
   height: 50px;
@@ -73,21 +80,25 @@
   font-size: 22px;
   flex-shrink: 0;
 }
+
 .stat-info {
   display: flex;
   flex-direction: column;
 }
+
 .stat-label {
   font-size: 12.5px;
   font-weight: 600;
   color: var(--color-text-muted);
 }
+
 .stat-value {
   font-size: 26px;
   font-weight: 800;
   color: var(--color-text);
   line-height: 1.2;
 }
+
 .stat-sub {
   font-size: 11px;
   color: var(--color-text-muted);
@@ -101,6 +112,7 @@
   grid-template-columns: 1.5fr 1fr;
   gap: 24px;
 }
+
 .dash-card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -108,6 +120,7 @@
   padding: 22px;
   box-shadow: var(--shadow-sm);
 }
+
 .dash-card-header {
   display: flex;
   align-items: center;
@@ -116,17 +129,20 @@
   padding-bottom: 12px;
   border-bottom: 1px solid var(--color-border);
 }
+
 .dash-card-title {
   font-size: 16px;
   font-weight: 700;
   color: var(--color-text);
 }
+
 .dash-link {
   font-size: 12.5px;
   color: var(--color-primary);
   font-weight: 600;
   transition: opacity 0.2s;
 }
+
 .dash-link:hover {
   opacity: 0.8;
 }
@@ -137,6 +153,7 @@
   flex-direction: column;
   gap: 12px;
 }
+
 .suggestion-item {
   display: flex;
   align-items: center;
@@ -147,9 +164,11 @@
   border-radius: var(--radius-md);
   transition: border-color 0.2s;
 }
+
 .suggestion-item:hover {
   border-color: var(--color-primary);
 }
+
 .rank-badge {
   width: 32px;
   height: 32px;
@@ -163,15 +182,18 @@
   justify-content: center;
   flex-shrink: 0;
 }
+
 .task-title-text {
   font-size: 14px;
   font-weight: 600;
   color: var(--color-text);
 }
+
 .suggestion-reason {
   font-size: 12px;
   color: var(--color-text-secondary);
 }
+
 .btn-complete-quick {
   background: var(--color-surface-hover);
   border: 1px solid var(--color-border);
@@ -186,6 +208,7 @@
   font-weight: bold;
   transition: all 0.2s;
 }
+
 .btn-complete-quick:hover {
   background: var(--color-success);
   border-color: var(--color-success);
@@ -198,6 +221,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .task-mini-row {
   display: flex;
   align-items: center;
@@ -207,6 +231,7 @@
   background: var(--color-surface);
   border: 1px solid var(--color-border);
 }
+
 .checkbox-circle {
   width: 22px;
   height: 22px;
@@ -222,19 +247,23 @@
   flex-shrink: 0;
   transition: all 0.2s;
 }
+
 .checkbox-circle.checked {
   background: var(--color-success);
   border-color: var(--color-success);
 }
+
 .mini-task-name {
   font-size: 13.5px;
   font-weight: 600;
   color: var(--color-text);
 }
+
 .mini-task-name.done {
   text-decoration: line-through;
   color: var(--color-text-muted);
 }
+
 .progress-mini-bar {
   width: 80px;
   height: 6px;
@@ -242,6 +271,7 @@
   border-radius: 3px;
   overflow: hidden;
 }
+
 .progress-mini-fill {
   height: 100%;
   border-radius: 3px;
@@ -254,6 +284,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
 .reminder-mini-item {
   display: flex;
   align-items: center;
@@ -263,14 +294,17 @@
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
 }
+
 .bell-badge {
   font-size: 18px;
 }
+
 .rem-text {
   font-size: 13px;
   font-weight: 600;
   color: var(--color-text);
 }
+
 .rem-sub {
   font-size: 11.5px;
   color: var(--color-text-muted);
@@ -283,6 +317,7 @@
   flex-direction: column;
   gap: 14px;
 }
+
 .cat-bar-bg {
   height: 8px;
   background: var(--color-surface);
@@ -290,6 +325,7 @@
   overflow: hidden;
   border: 1px solid var(--color-border);
 }
+
 .cat-bar-fill {
   height: 100%;
   background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
@@ -303,3 +339,288 @@
   color: var(--color-text-muted);
   font-size: 13px;
 }
+/* ==========================================
+   LIGHT DASHBOARD - GIAO DIEN SANG
+   ========================================== */
+
+.dashboard-container {
+  color: #243247;
+}
+
+/* Banner chao mung */
+.dashboard-banner {
+  background: linear-gradient(135deg, #e8f2ff 0%, #f3f7ff 55%, #e8f8ff 100%);
+  border: 1px solid #d8e7fb;
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.06);
+  backdrop-filter: none;
+}
+
+.banner-title {
+  color: #17365d;
+}
+
+.banner-subtitle {
+  color: #64748b;
+}
+
+.banner-badge {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* ==========================================
+   4 HINH TRON THONG KE
+   ========================================== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  justify-items: center;
+  align-items: center;
+}
+
+.stat-card {
+  width: 180px;
+  height: 180px;
+  box-sizing: border-box;
+  padding: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #e4edfa;
+  box-shadow: 0 8px 24px rgba(30, 64, 120, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 13px 28px rgba(37, 99, 235, 0.15);
+  border-color: #93c5fd;
+}
+
+.stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stat-value {
+  color: #1e3a5f;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.stat-sub {
+  color: #64748b;
+  font-size: 10px;
+  text-align: center;
+}
+
+/* Mau nen sang cho cac khu vuc noi dung */
+.dash-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.045);
+}
+
+.dash-card-title {
+  color: #1e293b;
+}
+
+.dash-card-header {
+  border-bottom-color: #e8edf4;
+}
+
+.dash-link {
+  color: #2563eb;
+}
+
+.suggestion-item,
+.task-mini-row,
+.reminder-mini-item {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.task-title-text,
+.mini-task-name,
+.rem-text {
+  color: #243247;
+}
+
+.suggestion-reason,
+.rem-sub {
+  color: #64748b;
+}
+
+.empty-state {
+  color: #64748b;
+}
+
+.cat-bar-bg {
+  background: #edf2f7;
+  border-color: #e2e8f0;
+}
+
+.checkbox-circle {
+  border-color: #cbd5e1;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    width: 145px;
+    height: 145px;
+    padding: 12px;
+  }
+
+  .stat-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+
+  .stat-value {
+    font-size: 25px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .stat-sub {
+    font-size: 9px;
+  }
+
+  .dashboard-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px;
+  }
+
+  .banner-actions {
+    flex-wrap: wrap;
+  }
+
+  .dashboard-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   DIEU CHINH 4 HINH TRON THONG KE
+   ========================================== */
+
+.stats-grid {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  justify-items: center;
+  align-items: center;
+}
+
+.stat-card {
+  width: 230px;
+  height: 230px;
+  min-width: 230px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.stat-icon {
+  width: 46px;
+  height: 46px;
+  font-size: 22px;
+}
+
+.stat-value {
+  font-size: 34px;
+}
+
+@media (max-width: 1100px) {
+  .stats-grid {
+    max-width: 650px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .stat-card {
+    width: 210px;
+    height: 210px;
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    width: 145px;
+    height: 145px;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .stat-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+
+  .stat-value {
+    font-size: 25px;
+  }
+}
+

@@ -5,38 +5,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
 
 :root {
-  --color-primary:       #6C63FF;
+  --color-primary: #6C63FF;
   --color-primary-hover: #5A52E0;
   --color-primary-light: rgba(108, 99, 255, 0.15);
-  --color-secondary:     #48CFB2;
+  --color-secondary: #48CFB2;
   --color-secondary-light: rgba(72, 207, 178, 0.15);
-  --color-bg:            #0B0B14;
-  --color-surface:       #151522;
+  --color-bg: #0B0B14;
+  --color-surface: #151522;
   --color-surface-hover: #1E1E32;
-  --color-card:          #181829;
-  --color-border:        #28283E;
-  --color-border-light:  #343450;
-  --color-text:          #F0F2FD;
-  --color-text-secondary:#B2B6D4;
-  --color-text-muted:    #757A9E;
-  --color-danger:        #FF5252;
-  --color-danger-light:  rgba(255, 82, 82, 0.15);
-  --color-warning:       #FFB74D;
+  --color-card: #181829;
+  --color-border: #28283E;
+  --color-border-light: #343450;
+  --color-text: #F0F2FD;
+  --color-text-secondary: #B2B6D4;
+  --color-text-muted: #757A9E;
+  --color-danger: #FF5252;
+  --color-danger-light: rgba(255, 82, 82, 0.15);
+  --color-warning: #FFB74D;
   --color-warning-light: rgba(255, 183, 77, 0.15);
-  --color-success:       #2DD4BF;
+  --color-success: #2DD4BF;
   --color-success-light: rgba(45, 212, 191, 0.15);
-  --color-info:          #38BDF8;
-  --color-info-light:    rgba(56, 189, 248, 0.15);
-  --radius-sm:           6px;
-  --radius-md:           10px;
-  --radius-lg:           16px;
-  --radius-xl:           24px;
-  --shadow-sm:           0 2px 8px rgba(0,0,0,0.25);
-  --shadow-md:           0 8px 24px rgba(0,0,0,0.35);
-  --shadow-lg:           0 16px 40px rgba(0,0,0,0.45);
+  --color-info: #38BDF8;
+  --color-info-light: rgba(56, 189, 248, 0.15);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -53,7 +55,11 @@ body {
   line-height: 1.5;
 }
 
-button, input, select, textarea, optgroup {
+button,
+input,
+select,
+textarea,
+optgroup {
   font-family: 'Be Vietnam Pro', 'Roboto', 'Segoe UI', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
@@ -82,13 +88,16 @@ a {
   width: 7px;
   height: 7px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--color-bg);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-border);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-border-light);
 }
@@ -110,10 +119,12 @@ a {
   transition: all 0.2s ease;
   box-shadow: 0 4px 14px rgba(108, 99, 255, 0.35);
 }
+
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(108, 99, 255, 0.5);
 }
+
 .btn-primary:active {
   transform: translateY(0);
 }
@@ -133,6 +144,7 @@ a {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
 .btn-secondary:hover {
   background: var(--color-surface-hover);
   border-color: var(--color-border-light);
@@ -152,6 +164,7 @@ a {
   cursor: pointer;
   transition: all 0.2s;
 }
+
 .btn-danger:hover {
   background: var(--color-danger);
   color: #fff;
@@ -171,6 +184,7 @@ a {
   transition: all 0.2s;
   font-size: 14px;
 }
+
 .btn-icon:hover {
   background: var(--color-surface-hover);
   color: var(--color-text);
@@ -187,21 +201,25 @@ a {
   font-size: 12px;
   font-weight: 600;
 }
+
 .badge-priority.khan-cap {
   background: rgba(255, 82, 82, 0.2);
   color: #FF5252;
   border: 1px solid rgba(255, 82, 82, 0.4);
 }
+
 .badge-priority.cao {
   background: rgba(255, 183, 77, 0.2);
   color: #FFB74D;
   border: 1px solid rgba(255, 183, 77, 0.4);
 }
+
 .badge-priority.trung-binh {
   background: rgba(56, 189, 248, 0.2);
   color: #38BDF8;
   border: 1px solid rgba(56, 189, 248, 0.4);
 }
+
 .badge-priority.thap {
   background: rgba(148, 163, 184, 0.2);
   color: #94A3B8;
@@ -217,16 +235,19 @@ a {
   font-size: 12px;
   font-weight: 600;
 }
+
 .badge-status.hoan-thanh {
   background: rgba(45, 212, 191, 0.18);
   color: #2DD4BF;
   border: 1px solid rgba(45, 212, 191, 0.35);
 }
+
 .badge-status.dang-lam {
   background: rgba(108, 99, 255, 0.18);
   color: #A39DFF;
   border: 1px solid rgba(108, 99, 255, 0.35);
 }
+
 .badge-status.chua-lam {
   background: rgba(148, 163, 184, 0.18);
   color: #94A3B8;
@@ -246,6 +267,7 @@ a {
   padding: 16px;
   animation: fadeIn 0.2s ease;
 }
+
 .modal-content {
   background: var(--color-card);
   border: 1px solid var(--color-border);
@@ -258,6 +280,7 @@ a {
   padding: 24px;
   animation: slideUp 0.25s ease;
 }
+
 .modal-header {
   display: flex;
   align-items: center;
@@ -266,11 +289,13 @@ a {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: 14px;
 }
+
 .modal-title {
   font-size: 18px;
   font-weight: 700;
   color: var(--color-text);
 }
+
 .modal-close {
   background: transparent;
   border: none;
@@ -279,6 +304,7 @@ a {
   cursor: pointer;
   line-height: 1;
 }
+
 .modal-close:hover {
   color: var(--color-text);
 }
@@ -287,6 +313,7 @@ a {
 .form-group {
   margin-bottom: 16px;
 }
+
 .form-label {
   display: block;
   font-size: 13px;
@@ -294,7 +321,10 @@ a {
   color: var(--color-text-secondary);
   margin-bottom: 6px;
 }
-.form-input, .form-select, .form-textarea {
+
+.form-input,
+.form-select,
+.form-textarea {
   width: 100%;
   padding: 10px 14px;
   background: var(--color-surface);
@@ -306,10 +336,14 @@ a {
   outline: none;
   transition: border-color 0.2s;
 }
-.form-input:focus, .form-select:focus, .form-textarea:focus {
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
 }
+
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -317,10 +351,130 @@ a {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
+
 @keyframes slideUp {
-  from { transform: translateY(16px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
+/* ===== LIGHT THEME ===== */
+:root {
+  --color-primary: #4F46E5;
+  --color-primary-hover: #4338CA;
+  --color-primary-light: rgba(79, 70, 229, 0.10);
+
+  --color-secondary: #0D9488;
+  --color-secondary-light: rgba(13, 148, 136, 0.10);
+
+  --color-bg: #F4F6FB;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #F1F4FA;
+  --color-card: #FFFFFF;
+
+  --color-border: #E2E8F0;
+  --color-border-light: #CBD5E1;
+
+  --color-text: #1E293B;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94A3B8;
+
+  --color-danger: #DC2626;
+  --color-danger-light: #FEE2E2;
+  --color-warning: #D97706;
+  --color-warning-light: #FEF3C7;
+  --color-success: #059669;
+  --color-success-light: #D1FAE5;
+  --color-info: #0284C7;
+  --color-info-light: #E0F2FE;
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+
+.modal-overlay {
+  background: rgba(15, 23, 42, 0.45);
+}
+
+
+/* ===== BLUE SIDEBAR THEME ===== */
+aside {
+  background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 100%) !important;
+  border-right: none !important;
+
+  --color-text: #FFFFFF;
+  --color-text-secondary: #DBEAFE;
+  --color-text-muted: #BFDBFE;
+  --color-border: rgba(255, 255, 255, 0.18);
+  --color-secondary: #A7F3D0;
+}
+
+/* Logo và tiêu ð? */
+aside h1 {
+  color: #FFFFFF !important;
+}
+
+aside a {
+  color: #FFFFFF !important;
+}
+
+/* M?c ðang ch?n */
+aside a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.22) !important;
+  color: #FFFFFF !important;
+  border-left: 3px solid #FFFFFF !important;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.15);
+}
+
+/* Các m?c chýa ch?n */
+aside a:not([aria-current="page"]) {
+  background: transparent !important;
+  color: #DBEAFE !important;
+}
+
+aside a:not([aria-current="page"]):hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #FFFFFF !important;
+}
+
+/* Khu v?c tài kho?n cu?i Sidebar */
+aside > div:last-child {
+  background: rgba(15, 23, 42, 0.14) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+aside button {
+  color: #DBEAFE !important;
+}
+
+aside button:hover {
+  color: #FFFFFF !important;
+}
+

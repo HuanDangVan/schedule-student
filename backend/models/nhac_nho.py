@@ -9,7 +9,7 @@ Theo đúng định nghĩa trong database.sql:
 - TrangThai (NVARCHAR(30) DEFAULT 'Chưa nhắc')
 - DaGui (BOOLEAN / BIT DEFAULT 0)
 """
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, Unicode, Boolean, DateTime, ForeignKey
 from sqlalchemy.orm import relationship
 
 try:
@@ -23,9 +23,9 @@ class NhacNho(Base):
 
     MaNhacNho       = Column(Integer, primary_key=True, index=True, autoincrement=True)
     MaCongViec      = Column(Integer, ForeignKey("CongViec.MaCongViec"), nullable=False)
-    NoiDungNhacNho  = Column(String(255), nullable=True)
+    NoiDungNhacNho  = Column(Unicode(255), nullable=True)
     ThoiGianNhacNho = Column(DateTime, nullable=False)
-    TrangThai       = Column(String(30), default="Chưa nhắc")
+    TrangThai       = Column(Unicode(30), default="Chưa nhắc")
     DaGui           = Column(Boolean, default=False)
 
     # Relationship
